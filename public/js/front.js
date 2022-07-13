@@ -2000,12 +2000,25 @@ var render = function render() {
   var _vm = this,
       _c = _vm._self._c;
 
-  return _c("main", [_c("h1", {
-    staticClass: "animate__animated animate__fadeIn text-center m-4"
-  }, [_vm._v("Sheikah's forum")]), _vm._v(" "), _c("MainComp")], 1);
+  return _c("main", [_vm._m(0), _vm._v(" "), _c("MainComp")], 1);
 };
 
-var staticRenderFns = [];
+var staticRenderFns = [function () {
+  var _vm = this,
+      _c = _vm._self._c;
+
+  return _c("div", {
+    staticClass: "d-flex justify-content-center"
+  }, [_c("h1", {
+    staticClass: "animate__animated animate__fadeIn text-center"
+  }, [_vm._v("Sheikah's forum")]), _vm._v(" "), _c("img", {
+    staticClass: "animate__animated animate__fadeInDown text-center",
+    attrs: {
+      src: __webpack_require__(/*! ../../public/image/1200px-The_Legend_of_Zelda_-_Sheikah_Symbol.svg.png */ "./public/image/1200px-The_Legend_of_Zelda_-_Sheikah_Symbol.svg.png"),
+      alt: ""
+    }
+  })]);
+}];
 render._withStripped = true;
 
 
@@ -6426,7 +6439,7 @@ exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader
 
 
 // module
-exports.push([module.i, "h1[data-v-f348271a] {\n  font-size: 100px;\n  -webkit-animation-duration: 3s;\n          animation-duration: 3s;\n}", ""]);
+exports.push([module.i, "h1[data-v-f348271a] {\n  font-size: 100px;\n  -webkit-animation-duration: 3s;\n          animation-duration: 3s;\n}\nimg[data-v-f348271a] {\n  height: 150px;\n  -webkit-animation-duration: 4s;\n          animation-duration: 4s;\n}", ""]);
 
 // exports
 
@@ -6445,7 +6458,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "ul[data-v-d9d3745a] {\n  list-style: none;\n}\nul li[data-v-d9d3745a] {\n  font-size: small;\n  font-weight: 600;\n}\nul .multiplayer[data-v-d9d3745a] {\n  color: red;\n}\nul .singleplayer[data-v-d9d3745a] {\n  color: blueviolet;\n}\nul .openworld[data-v-d9d3745a] {\n  color: green;\n}\nul .online[data-v-d9d3745a] {\n  color: blue;\n}", ""]);
+exports.push([module.i, ".card[data-v-d9d3745a] {\n  background-color: rgb(232, 229, 229);\n}\n.card ul[data-v-d9d3745a] {\n  padding: 0;\n  list-style: none;\n  display: flex;\n}\n.card ul li[data-v-d9d3745a] {\n  font-size: small;\n  font-weight: 600;\n  margin-right: 10px;\n}\n.card ul .multiplayer[data-v-d9d3745a] {\n  color: red;\n}\n.card ul .singleplayer[data-v-d9d3745a] {\n  color: blueviolet;\n}\n.card ul .openworld[data-v-d9d3745a] {\n  color: green;\n}\n.card ul .online[data-v-d9d3745a] {\n  color: blue;\n}", ""]);
 
 // exports
 
@@ -50120,6 +50133,17 @@ module.exports = function(module) {
 	return module;
 };
 
+
+/***/ }),
+
+/***/ "./public/image/1200px-The_Legend_of_Zelda_-_Sheikah_Symbol.svg.png":
+/*!**************************************************************************!*\
+  !*** ./public/image/1200px-The_Legend_of_Zelda_-_Sheikah_Symbol.svg.png ***!
+  \**************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/images/1200px-The_Legend_of_Zelda_-_Sheikah_Symbol.svg.png?1eaac31f624adfacb09a04cd0c3b0680";
 
 /***/ }),
 

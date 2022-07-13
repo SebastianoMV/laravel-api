@@ -44,24 +44,33 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-ul{
-    list-style: none;
-    li{
-        font-size: small;
-        font-weight: 600;
+.card{
+
+    ul{
+        padding: 0;
+        list-style: none;
+        display: flex;
+        li{
+            font-size: small;
+            font-weight: 600;
+            margin-right: 10px;
+        }
+        .multiplayer{
+            color: red;
+        }
+        .singleplayer{
+            color: blueviolet;
+        }
+        .openworld{
+            color: green;
+        }
+        .online{
+            color: blue;
+        }
     }
-    .multiplayer{
-        color: red;
-    }
-    .singleplayer{
-        color: blueviolet;
-    }
-    .openworld{
-        color: green;
-    }
-    .online{
-        color: blue;
-    }
+    background-color: rgb(232, 229, 229);
+
 }
+
 
 </style>
