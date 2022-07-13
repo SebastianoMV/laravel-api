@@ -1,9 +1,10 @@
 <template>
-<div>
-    <div v-for="post in posts" :key="post.id">
-        {{post.title}}
+<div class="container ">
+    <div class="card m-3 p-3" v-for="post in posts" :key="post.id">
+        <h3>{{post.title}}</h3>
+        <p>{{post.content}}</p>
         <ul>
-            <li v-for="(tag) in post.tags" :key="tag.id">
+            <li v-for="(tag) in post.tags" :key="tag.id" :class="tag.slug">
                 {{tag.name}}
             </li>
         </ul>
@@ -42,6 +43,25 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss" scoped>
+ul{
+    list-style: none;
+    li{
+        font-size: small;
+        font-weight: 600;
+    }
+    .multiplayer{
+        color: red;
+    }
+    .singleplayer{
+        color: blueviolet;
+    }
+    .openworld{
+        color: green;
+    }
+    .online{
+        color: blue;
+    }
+}
 
 </style>

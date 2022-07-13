@@ -5,6 +5,7 @@ window.axios = require('axios');
 
 import App from './App.vue';
 
+
 const app = new Vue({
 
     el: '#app',
